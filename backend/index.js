@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Option 2:Allow Custom Origins
 app.use(cors({
-  origin:'https://summikha5427.github.io/BookStrore-trial/', //Only the clients with this origin can access this server
+  origin:['http://localhost:3000','https://summikha5427.github.io/BookStrore-trial/'], //Only the clients with this origin can access this server
   method:['GET','POST','PUT','DELETE'], //only there methods can be used by the client 
   allowedHeaders: ['Content-Type'] 
 }));
