@@ -1,11 +1,15 @@
 {
+  "homepage": "http://Summikha5427.github.io/BookStore-trial",
   "name": "backend",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "keywords": [],
   "author": "",
@@ -15,6 +19,8 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^8.0.3",
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "react-scripts": "latest"
   }
+  
 }
